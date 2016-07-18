@@ -95,10 +95,10 @@ void AP_MotorsSingle::set_update_rate( uint16_t speed_hz )
         1U << AP_MOTORS_MOT_1 |
         1U << AP_MOTORS_MOT_2 |
         1U << AP_MOTORS_MOT_3 |
-        1U << AP_MOTORS_MOT_4 ;
+        1U << AP_MOTORS_MOT_4 |
+        1U << AP_MOTORS_MOT_5 ;
     rc_set_freq(mask, _servo_speed);
     uint32_t mask2 =
-        1U << AP_MOTORS_MOT_5 |
         1U << AP_MOTORS_MOT_6 ;
     rc_set_freq(mask2, _speed_hz);
 }
